@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-width: 100vh;
+}
+
+.wrapper {
+
+    perspective: 10px;
+    background-color: pink !important;
+    ;
+}
+
+header {
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.background {
+    transform: translateZ(-10px) scale(2);
+    object-fit: scale-down;
+    position: fixed;
+    top: 0;
+    left: 50%;
+
+}
+
+.foreground {
+    transform: translateZ(-5px) scale(1.5);
+    object-fit: scale-down;
+    right: 80%;
+
+}
+
+.background,
+.foreground {
+
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.title {
+    position: absolute;
+
+    top: 5%;
+    font-size: 3rem;
+    color: black;
+    text-shadow: 0 0 5px black;
+
+
+
+}
+
+.form {
+    position: absolute;
+    left: 15%;
+    top: 40%;
+    /* transform: translate(-50%, -50%); */
+    background-color: transparent !important;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px black;
+
+}
