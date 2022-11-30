@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="assets/js/times-table.js" defer></script>
+    <title>Jacksons Portfolio Site | Times Tables</title>
+
+
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!--
+    Filename: times-table.html
+    Project:  WT-Learning-JS
+    Author:   Adrian Gould <adrian.gould@nmtafe.wa.edu.au>
+    Created:  11/10/2022
+    Version:  ...
+    -->
+
+</head>
+
+<body class="h-screen flex flex-col">
+
+    <header class="bg-rose-300 text-black w-100 p-2 flex flex-row gap-4">
+        <h1 class="px-6 py-2">
+            <a href="demo-template.html" class="">
+                jackson.rush
+            </a>
+        </h1>
+        <nav class="flex flex-row gap-4">
+            <a href="demo-template.html"
+                class="hover:text-slate-100 hover:bg-slate-700 transition duration-300 ease-in-out py-2 px-4  border-b-2 border-white">
+                Home
+            </a>
+            <a href="demo-template.html"
+                class="hover:text-slate-100 hover:bg-slate-700 transition duration-300 ease-in-out py-2 px-4 border-b-2 border-sky-500">
+                L'cloque
+            </a>
+            <a href="demo-template.html"
+                class="hover:text-slate-100 hover:bg-slate-700 transition duration-300 ease-in-out py-2 px-4 border-b-2 border-sky-500">
+                Simon Says
+            </a>
+        </nav>
+    </header>
+
+    <main class="w-4/5 mx-auto p-6  border border-slate-300 rounded-lg flex flex-col">
+
+        <div id="demo-area" class="font-light grow mx-auto
+        bg-slate-100 text-slate-500 rounded-t
+        border border-slate-500
+        flex flex-col">
+
+            <h1 class="bg-blue-300 text-4xl font-bold text-center">L' Times tab'le</h1>
+
+            <div class=" text-center text-4xl text p-2 badge relative inline-block text-black ">
+                Choose a multiple
+            </div>
+
+            <div class="max-w-md text-4xl font-bold text-center p-8 center">
+                <select id="multiple" name="multiple">
+                </select>
+                <button id="resultsButton">Gimme that table</button>
+
+                <div
+                    class="container flex flex-col items-center p-8 px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row">
+                    <div class="result" id="result"></div>
+                </div>
+            </div>
+
+            <div class="p-4 pb-4 text-sm
+                                    text-slate-100 bg-slate-500
+                                    rounded-b border border-slate-500 text-right">
+                Created by YOUR NAME HERE
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="mt-6 px-6 py-6 bg-red-400 text-slate-500 text-xs flex flex-row gap-12">
+        <div class="flex grow">&copy; Copyright 2022 Jackson Rush &amp; JACKSON RUSH</div>
+        <div class="flex-right">Creative Commons License to be added.</div>
+    </footer>
+
+</body>
+
+</html>

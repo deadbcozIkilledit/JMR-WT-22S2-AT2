@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/css-2.css">
+    <link rel="stylesheet" href="css/css-4.css">
+    <link rel="stylesheet" href="css/main.css"">
+    <!-- <link rel=" stylesheet" href="css/tailwind.css"> -->
+    <!--    <link rel="stylesheet" href="website-02/assets/css/reset.css">-->
+
+
+    <title class="text-6xl text-white">Document</title>
+</head>
+
+<body>
+
+
+    <div class="flex justify-between items-center  mx-4  top-bar">
+        <a href="#">
+            <img src="img\lizard-small.png" alt="Logo" class="mx-4 my-logo" />
+        </a>
+        <form class="search-bar">
+            <input class="search-input" type="search" placeholder="Search" aria-label="Search" />
+            <button type="submit" class="search-btn">
+                <img src="img\magnify.png" />
+            </button>
+        </form>
+
+        <div class="menu-icons">
+            <a href=#>
+                <img src="img\shop.png" alt="Upload Video" />
+            </a>
+            <a href=#>
+                <img src="img\love.png" alt="Apps" />
+            </a>
+            <a href=#>
+                <img src="img\settings.png" alt="Notifications" />
+            </a>
+            <a href=#>
+                <img class="menu-channel-icon" src="http://unsplash.it/36/36?gravity=center" alt="Your Channel" />
+            </a>
+        </div>
+    </div>
+
+
+    <div class="flex flex-row justify-center space-x-6 mx-auto socials">
+
+        <a href="#" class="button button-github">
+            <img class="socials-images" src="img\github.png" />
+        </a>
+        <a href="#" class="button button-facebook">
+            <img class="socials-images" src="img\facebook.png" />
+        </a>
+        <a href="#" class="button button-instagram">
+            <img class="socials-images" src="img\instagram.png" />
+        </a>
+        <a href="#" class="button button-soundcloud">
+            <img class="socials-images" src="img\soundcloud.png" />
+        </a>
+        <a href="#" class="button button-youtube">
+            <img class="socials-images" src="img\youtube.png" />
+        </a>
+    </div>
+
+
+    <div class="h-screen overflow-y-auto overflow-x-hidden wrapper">
+
+        <header class="relative flex justify-between items-start h-full">
+
+            <!-- <img src="assets/img/smol-dino.png" class="foreground"> -->
+            <!-- 
+            <h1 class="title">Get In Touch</h1> -->
+
+            <div class="form">
+
+                <label for="username">enter user name:</label>
+                <input class="entry-field" type="text" id="username" name="username" placeholder="username" required>
+                <!-- a placeholder will insert text in a field and then delete it when you focus on that field to provide your own input-->
+                <br><br>
+                <label for="email">enter email:</label>
+                <input class="entry-field" type="email" id="email" name="email" placeholder="your email" required>
+                <!-- the required keyword will make it so a form can not be submitted without the field having been written in-->
+                <br><br>
+                <label for="password">password</label>
+                <input class="entry-field" type="password" id="password" name="password" placeholder="choose a password"
+                    required>
+
+
+                <!--these are radio buttons, they are all assigned the same name, so they deselect the others as a new option is selected-->
+                <div class="radio-buttons">
+                    <p>Select your age</p>
+                    <div class="age-radio">
+                        <input type="radio" name="age" value="0-25" id="option-1">
+                        <label for="option-1">0-25</label>
+                        <input type="radio" name="age" value="26-50" id="option-2">
+                        <label for="option-2">26-50</label>
+                        <input type="radio" name="age" value="51-100" id="option-3">
+                        <label for="option-3">51-100</label>
+                    </div>
+                    <!--the <br> tag will insert a new line command-->
+                </div>
+                <br><br>
+                <label for="question:">Security question</label>
+                <!--the select keyword provides a drop down box input with the option keyword providing the values of the dropbox -->
+                <select name="question" id="question">
+                    <!--the value keyword is for backend access to the fields and doesn't have much to do with the front end, it makes sense to use the same name for value as for 'name'-->
+                    <option value="q1">How long do you sleep for on average?</option>
+                    <option value="q2">do you slap the vegetable?</option>
+                    <option value="q3">what are the missile defence codes?</option>
+                </select>
+
+                <br><br>
+
+                <label for="answer">Security question answer</label>
+                <input type="text" name="answer" id="answer">
+
+                <br><br>
+
+
+                <input type="submit" value="submit the form">
+                <div class="form-field">
+                    <label for="FileField">Birth Certificate:</label>
+                    <input type="file" id="FileField" name="FileField" />
+                </div>
+            </div>
+            <img src="img/mushroom.png" class="background">
+        </header>
+    </div>
+
+
+
+    <footer>
+        <div
+            class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+            <!-- <div class="footer-img">
+                        <img src="assets/img/sperm.png" alt="" />
+                    </div> -->
+            <!--logo and social links-->
+
+            <div class="mx-auto my-6 text-center text-white md:hidden">
+                Copyright &copy; 2022, all rights reserved
+            </div>
+
+            <div class="flex justify-around space-x-32">
+                <div class="flex flex-col space-y-3 text-white">
+                    <a href="index.html" class="hover:text-brightRed">Home</a>
+                    <a href="index3.html" class="hover:text-brightRed">Media</a>
+                    <a href="index5.html" class="hover:text-brightRed">about</a>
+                    <a href="index4.html" class="hover:text-brightRed">FAQ</a>
+                </div>
+                <!--input container-->
+                <div class="flex flex-col justify-between">
+                    <form>
+                        <div class="flex space-x-3">
+                            <input type="text" class="flex-1 px-4 rounded-full focus:outline-none"
+                                placeholder="THE GEMS GIVE THEM TO ME" />
+
+                            <button
+                                class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none">
+                                GO
+                            </button>
+                    </form>
+                </div>
+                <div class="hidden text-white md:block">
+                    Copyright &copy; 2022, all rights reserved
+                </div>
+            </div>
+    </footer>
+
+</body>
+
+</html>

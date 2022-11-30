@@ -1,0 +1,59 @@
+/*background-----------------------------------------------------------------*/
+.wrapper {
+    perspective: 10px;
+    background-color: skyblue;
+}
+
+header {
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.background {
+    transform: translateZ(-10px) scale(2);
+    object-fit: scale-down;
+    top: 60%
+}
+
+.foreground {
+    transform: translateZ(-5px) scale(1.5);
+    scale: 2;
+}
+
+.background,
+.foreground {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.title {
+    position: absolute;
+    left: 60%;
+    top: 25%;
+    font-size: 7rem;
+    color: black;
+    text-shadow: 0 0 5px black;
+
+
+
+}
+
+.socials {
+    position: absolute;
+    left: 70%;
+    top: 50%;
+
+}
+
+
+
+.testimonials {
+    background-color: gray !important;
+
+}
+
+footer {
+    background-color: darkslategray;
+}

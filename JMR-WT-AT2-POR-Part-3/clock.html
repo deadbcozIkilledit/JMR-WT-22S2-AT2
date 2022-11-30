@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Jacksons Portfolio Site | Digital Clock</title>
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- CSS -->
+
+    <script src="assets/js/clock.js" defer></script>
+    <!-- JS (Deferred) -->
+
+
+    <!--
+    Filename: clock.html
+    Project:  WT-Learning-JS
+    Author:   Jackson Rush <20088989@tafe.wa.edu.au>
+    Created:  11/10/2022
+    Version:  ...
+    -->
+</head>
+
+
+<body>
+
+    <header class="bg-rose-300 text-black w-100 p-2 flex flex-row gap-4">
+        <h1 class="px-6 py-2">
+            <a href="demo-template.html" class="">
+                jackson.rush
+            </a>
+        </h1>
+        <nav class="flex flex-row gap-4">
+            <a href="demo-template.html"
+                class="hover:text-slate-100 hover:bg-slate-700 transition duration-300 ease-in-out py-2 px-4  border-b-2 border-white">
+                Home
+            </a>
+            <a href="time-table.html"
+                class="hover:text-slate-100 hover:bg-slate-700 transition duration-300 ease-in-out py-2 px-4 border-b-2 border-sky-500">
+                l'Times tab'le
+            </a>
+            <a href="simon-says.html"
+                class="hover:text-slate-100 hover:bg-slate-700 transition duration-300 ease-in-out py-2 px-4 border-b-2 border-sky-500">
+                Simon Says
+            </a>
+        </nav>
+    </header>
+
+    <main class="w-4/5 mx-auto p-6 grow border border-slate-300 rounded-lg flex flex-col">
+
+        <div id="demo-area" class="font-light grow
+    bg-slate-100 text-slate-500 rounded-t
+    border border-slate-500
+    flex flex-col">
+
+            <div class=" text-center badge relative inline-block text-white p-1 bg-red-700 font-bold rounded-md">cloque
+            </div>
+
+
+            <div class="container flex flex-col items-center mx-auto p-8">
+
+
+                <div id="dayOfWeek" class="text-4xl">Tuesday</div>
+                <div id="dayMonth" class="text-4xl">Tuesday</div>
+
+                <div class="clock text-4xl my-8 p-2 text-bold border border-slate-500">
+                    <span id="hour">02:</span>
+                    <span id="colon">:</span>
+                    <span id="minute">30:</span>
+                </div>
+            </div>
+
+
+            <div class="p-4 pb-4 text-sm
+                        text-slate-100 bg-slate-500
+                        rounded-b border border-slate-500 text-right">
+                Created by Jackson Rush
+            </div>
+
+        </div>
+    </main>
+
+
+
+    <footer class="mt-6 px-6 py-6 bg-red-400 text-slate-500 text-xs flex flex-row gap-12">
+        <div class="flex grow">&copy; Copyright 2022 Jackson Rush &amp; JACKSON RUSH</div>
+        <div class="flex-right">Creative Commons License to be added.</div>
+    </footer>
+</body>
+
+</html>
