@@ -136,7 +136,6 @@ function resetGame(text) {
 
 function startGame() {
     music.src = ""
-
     startButton.classList.add("hidden")
     info.classList.remove("hidden")
     info.textContent = "Wait for the computer..."
